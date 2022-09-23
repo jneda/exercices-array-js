@@ -24,8 +24,10 @@ function niemePlusGrand(array, n) {
 // tests
 
 function log(array, n) {
+  // gestion du quantième
+  const quantieme = n > 1 ? `${n}ieme` : "1er";
   console.log(
-    `${n}ieme plus grand de [${array}] => [${numSort(array)}] ` +
+    `${quantieme} plus grand de [${array}] => [${numSort(array)}] ` +
     `=> ${niemePlusGrand(array, n)}`
   );
 }
