@@ -7,9 +7,10 @@ Exemple de sortie : 90 */
 
 // je ne vois pas que la consigne m'interdise de trier le tableau
 // non trié !
+// histoire de pas toucher l'original je trie une copie du tableau
 
 function numSort(array) {
-  return array.sort((a, b) => a - b);
+  return array.slice().sort((a, b) => a - b);
 }
 
 function niemePlusGrand(array, n) {
